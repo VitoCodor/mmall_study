@@ -142,4 +142,22 @@ public class Product {
     public void setSubImages(String subImages) {
         this.subImages = subImages == null ? null : subImages.trim();
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", categoryId=" + categoryId +
+                ", name='" + name + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", mainImage='" + mainImage + '\'' +
+                ", detail='" + detail + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", subImages='" + subImages + '\'' +
+                '}';
+    }
 }
