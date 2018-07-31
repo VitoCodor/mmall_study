@@ -70,7 +70,6 @@ public class UserServiceImpl implements IUserService{
         if (StringUtils.isNotBlank(type)) {
             //开始校验
             if (Const.USERNAME.equals(type)) {
-                logger.info("检查用户名是否已存在");
                 int resultCount = userMapper.checkUsername(str);
                 if (resultCount > 0) {
                     logger.info("用户名已经存在");
